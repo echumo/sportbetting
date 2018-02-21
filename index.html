@@ -1,1 +1,321 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="description" content="Mathematical approach to analyzing and predicting football matches around the world!">
+        <meta name="author" content="">
+    
+        <title>poisonfoot</title>
+
+            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="/css/blog.min.css" rel="stylesheet">
+    
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#main-active').DataTable( {
+                "paging":   false,
+                "info":     false
+            } );
+        });
+    </script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113797002-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113797002-1');
+    </script>
+    
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    
+        
+  </head>
+    <body>        <div class="blog-masthead">
+        <div class="container">
+                    <nav class="blog-nav">
+                                                                                    <a class="blog-nav-item active" href="/">Home</a>
+                                <a class="blog-nav-item" href="/about">About</a>
+                                <a class="blog-nav-item" href="/blog">Blog</a>
+                                                                        </nav>
+        </div>
+    </div>
+        <div class="container">
+
+                <div class="row">
+            <div class="col-2-md col-sm-2">
+                <img src="/images/pfsite.jpg" class="" alt="Responsive image">
+            </div>
+            <div class="col-10-md col-sm-2 blog-header">
+                <iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=48&l=ur1&category=consumerelectronics&banner=10CFJZ8NBCZT0NPM6V02&f=ifr&linkID=dd08394ef9ac5b723e6161298e7eaa36&t=poisonfoot07-21&tracking_id=poisonfoot07-21" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+            </div>
+        </div>
+                
+        
+        <div class="row">
+
+            <div class="col-md-9 col-sm-9 col-xs-9">
+
+                <div class="blog-post">
+
+                    <div class="row">
+                        <div class="col-12 socialmed nopadding">
+                            <span class="fb-like" data-href="https://www.facebook.com/poisfoot" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></span>
+                            <span class="pr-3"><a href="https://twitter.com/poison_foot?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @poison_foot</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 socialmed nopadding">
+                            <a class="lang-flag-first" href="/es"><img src="/images/es.png"/></a>
+                            <a class="lang-flag" href="/"><img src="/images/en.png"/></a>
+                        </div>
+                    </div>
+                                                        
+                      <div class="row">
+        <div class="col">
+                            <h5 class="text-warning">UPDATE 16-02-2018: New <a href="/update">Missing Players</a> chart!</h5>
+                <h6 class="text-warning">UPDATE 08-02-2018: New <a href="/update">Overs &amp; Unders charts</a></h6>
+                <h6 class="text-warning">UPDATE 31-01-2018: New <a href="/update">Goal Times chart</a> &amp; Cumulative Rest Days info chart</h6>
+                        </div>
+    </div>
+    
+    <table id="main-active" class="table table-dark table-striped compact table-condensed">
+      <thead class="main-active-header">
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Country</th>
+          <th scope="col">Home Team - Away team</th>
+        </tr>
+      </thead>
+      <tbody>
+                                    <tr class="active-row" data-href="/match/538">
+                    <td>02/21 00:00</td>
+                    <td>Argentina </td>
+                    <td><a href="/match/538">Sacachispas - Barracas Central</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/4422">
+                    <td>02/21 13:45</td>
+                    <td>Saudi Arabia </td>
+                    <td><a href="/match/4422">Al Qaisoma - Najran</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/6908">
+                    <td>02/21 14:00</td>
+                    <td>Turkey </td>
+                    <td><a href="/match/6908">Denizlispor - Umraniyespor</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/6909">
+                    <td>02/21 14:00</td>
+                    <td>Turkey </td>
+                    <td><a href="/match/6909">Eskisehirspor - Gazisehir Gazi</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/4423">
+                    <td>02/21 14:10</td>
+                    <td>Saudi Arabia </td>
+                    <td><a href="/match/4423">Al Orubah - Hajer</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/4424">
+                    <td>02/21 16:15</td>
+                    <td>Saudi Arabia </td>
+                    <td><a href="/match/4424">Al Nahdha - Al Shoalah</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/4425">
+                    <td>02/21 16:15</td>
+                    <td>Saudi Arabia </td>
+                    <td><a href="/match/4425">Al Najoom - Al Ta&#039;ee</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/612">
+                    <td>02/21 16:15</td>
+                    <td>Bahrain </td>
+                    <td><a href="/match/612">Muharraq - Al Najma</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/613">
+                    <td>02/21 16:30</td>
+                    <td>Bahrain </td>
+                    <td><a href="/match/613">Al-Hidd - Al Riffa</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/976">
+                    <td>02/21 17:00</td>
+                    <td>Cyprus </td>
+                    <td><a href="/match/976">Aris - Olympiakos</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/6910">
+                    <td>02/21 17:00</td>
+                    <td>Turkey </td>
+                    <td><a href="/match/6910">Istanbulspor - Manisaspor</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/6911">
+                    <td>02/21 17:00</td>
+                    <td>Turkey </td>
+                    <td><a href="/match/6911">Elazgspor - Giresunspor</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/4581">
+                    <td>02/21 18:20</td>
+                    <td>Saudi Arabia </td>
+                    <td><a href="/match/4581">Al Quadisiya - Al Ittifaq</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/614">
+                    <td>02/21 18:30</td>
+                    <td>Bahrain </td>
+                    <td><a href="/match/614">Malkiya - Manama</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/5002">
+                    <td>02/21 18:30</td>
+                    <td>South Africa </td>
+                    <td><a href="/match/5002">Mamelodi Sundowns - Free State Stars</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/3488">
+                    <td>02/21 18:30</td>
+                    <td>Germany </td>
+                    <td><a href="/match/3488">Darmstadt 98 - Kaiserslautern</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/6390">
+                    <td>02/21 18:45</td>
+                    <td>Spain </td>
+                    <td><a href="/match/6390">Leganes - Real Madrid</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/3985">
+                    <td>02/21 19:30</td>
+                    <td>Germany </td>
+                    <td><a href="/match/3985">Wuppertaler SV - Rot-Weiss Essen</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/2950">
+                    <td>02/21 20:45</td>
+                    <td>England </td>
+                    <td><a href="/match/2950">Rochdale - Milton Keynes Dons</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1986">
+                    <td>02/21 20:45</td>
+                    <td>England </td>
+                    <td><a href="/match/1986">Bristol City - Fulham</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1987">
+                    <td>02/21 20:45</td>
+                    <td>England </td>
+                    <td><a href="/match/1987">Derby County - Leeds United</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1988">
+                    <td>02/21 20:45</td>
+                    <td>England </td>
+                    <td><a href="/match/1988">Ipswich Town - Cardiff City</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1989">
+                    <td>02/21 20:45</td>
+                    <td>England </td>
+                    <td><a href="/match/1989">Wolverhampton  - Norwich City</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1032">
+                    <td>02/21 22:15</td>
+                    <td>El Salvador </td>
+                    <td><a href="/match/1032">Aguila - Audaz</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1033">
+                    <td>02/21 22:30</td>
+                    <td>El Salvador </td>
+                    <td><a href="/match/1033">Municipal Limeno - Chalatenango</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/539">
+                    <td>02/22 01:05</td>
+                    <td>Argentina </td>
+                    <td><a href="/match/539">Defensores de  - Talleres Remedios</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1034">
+                    <td>02/22 02:00</td>
+                    <td>El Salvador </td>
+                    <td><a href="/match/1034">Sonsonate - FAS</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1035">
+                    <td>02/22 02:00</td>
+                    <td>El Salvador </td>
+                    <td><a href="/match/1035">Isidro Metapan - Pasaquina</a></td>
+                </tr>
+                                                <tr class="active-row" data-href="/match/1036">
+                    <td>02/22 02:00</td>
+                    <td>El Salvador </td>
+                    <td><a href="/match/1036">Firpo - Dragon</a></td>
+                </tr>
+                          </tbody>
+    </table>
+        
+    <script>
+        $('#main-active').on( 'click', 'tbody tr', function (e) {
+            if (!$(e.target).is('a')) {
+                var d = $(this).attr('data-href');
+                if (e.ctrlKey){
+                     window.open(d,'_blank');
+                 } else {
+                    window.location.href = d;
+                 }
+            }
+        } );
+    </script>
+
+                </div>
+
+                                  <nav>
+                    <ul class="pager">
+                                                    <li><a href="/report">Report a problem</a></li>
+                                            </ul>
+                  </nav>
+                
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="blog-sidebar">
+                    <div>
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=poisonfoot07-21&marketplace=amazon&region=GB&placement=1527211940&asins=1527211940&linkId=3b2b2db9eec298e32dca12320a34289b&show_border=true&link_opens_in_new_window=false&price_color=ffffff&title_color=ffffff&bg_color=222222">
+    </iframe>
+                    </div>
+                    <div class="item-ad">
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=poisonfoot07-21&marketplace=amazon&region=GB&placement=1593275994&asins=1593275994&linkId=f1285f77e1edb9cc58f3f13458433b05&show_border=true&link_opens_in_new_window=false&price_color=ffffff&title_color=ffffff&bg_color=222222">
+    </iframe>
+                    </div>
+                    <div class="item-ad">
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=poisonfoot07-21&marketplace=amazon&region=GB&placement=B00FYZW572&asins=B00FYZW572&linkId=10bc784575e898b3030d23c9692fe011&show_border=true&link_opens_in_new_window=false&price_color=ffffff&title_color=ffffff&bg_color=222222">
+    </iframe>
+                    </div>
+                </div>
+            </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+    </footer>
+    
+    
+    </body>
+</html>
